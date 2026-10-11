@@ -1,0 +1,45 @@
+.footer {
+    background-color: brown;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.titulo {
+    margin: 0 0 15px;
+    font-size: 22px;
+}
+
+.equipo {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+.persona {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.area {
+    margin: 0;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(226, 183, 118);
+    font-weight: bold;
+}
+
+.nombre {
+    margin: 0;
+    font-size: 17px;
+}
+
+.cargo {
+    margin: 0;
+    font-size: 13px;
+    color: rgb(236, 219, 203);
+}

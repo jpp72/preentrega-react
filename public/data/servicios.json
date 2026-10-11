@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "categoria": "Transporte logístico",
+    "nombre": "Carga general",
+    "descripcion": "Traslado aéreo de carga seca.",
+    "precio": 1200,
+    "imagen": "cargoPlane"
+  },
+  {
+    "id": 2,
+    "categoria": "Transporte logístico",
+    "nombre": "Carga refrigerada",
+    "descripcion": "Traslado con cadena de frío.",
+    "precio": 2500,
+    "imagen": "cargoPlane"
+  },
+  {
+    "id": 3,
+    "categoria": "Viajes",
+    "nombre": "Pasaje nacional",
+    "descripcion": "Vuelos dentro del país.",
+    "precio": 150,
+    "imagen": "travel"
+  },
+  {
+    "id": 4,
+    "categoria": "Viajes",
+    "nombre": "Pasaje internacional",
+    "descripcion": "Vuelos a destinos del exterior.",
+    "precio": 650,
+    "imagen": "travel"
+  },
+  {
+    "id": 5,
+    "categoria": "Mantenimiento",
+    "nombre": "Inspección general",
+    "descripcion": "Revisión completa de la aeronave.",
+    "precio": 3000,
+    "imagen": "repar"
+  },
+  {
+    "id": 6,
+    "categoria": "Mantenimiento",
+    "nombre": "Reparación de motores",
+    "descripcion": "Servicio técnico de motores.",
+    "precio": 12000,
+    "imagen": "repar"
+  }
+]
