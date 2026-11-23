@@ -1,0 +1,79 @@
+.gestion {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.gestion h2,
+.gestion h3 {
+    text-align: center;
+}
+
+.lista {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    border: solid 1px brown;
+    border-radius: 12px;
+    background-color: rgb(245, 235, 220);
+}
+
+.fila img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.datos {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    flex: 1;
+    min-width: 10rem;
+    text-align: left;
+}
+
+.oferta {
+    color: green;
+    font-weight: bold;
+}
+
+.acciones {
+    display: flex;
+    gap: 8px;
+}
+
+.editar,
+.eliminar {
+    border: none;
+    cursor: pointer;
+    color: white;
+    padding: 8px 14px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.editar {
+    background-color: rgb(226, 183, 118);
+}
+
+.eliminar {
+    background-color: rgb(190, 60, 50);
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+}

@@ -1,0 +1,11 @@
+.numero {
+    display: inline-block;
+    min-width: 20px;
+    padding: 2px 5px;
+    border-radius: 12px;
+    background-color: brown;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+}

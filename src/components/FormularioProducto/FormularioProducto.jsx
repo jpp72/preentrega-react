@@ -1,9 +1,10 @@
 import styles from './FormularioProducto.module.css';
+import { obtenerImagen } from '../../data/imagenes';
 
-function FormularioProducto({ datosForm, manejarCambio, manejarCambioImagen, manejarEnvio, cargando, mensaje, urlImagen }) {
+function FormularioProducto({ datosForm, manejarCambio, manejarEnvio, modoEdicion, cancelarEdicion, guardando }) {
   return (
     <form className={styles.formulario} onSubmit={manejarEnvio}>
-      <h3>Agregar nuevo servicio</h3>
+      <h3>{modoEdicion ? 'Editar servicio' : 'Agregar nuevo servicio'}</h3>
 
       <div className={styles.campo}>
         <label htmlFor="nombre">Nombre del servicio:</label>
@@ -53,6 +54,7 @@ function FormularioProducto({ datosForm, manejarCambio, manejarCambioImagen, man
           id="precio"
           name="precio"
           placeholder="Ej: 1500"
+          min="1"
           value={datosForm.precio}
           onChange={manejarCambio}
           required
@@ -60,21 +62,55 @@ function FormularioProducto({ datosForm, manejarCambio, manejarCambioImagen, man
       </div>
 
       <div className={styles.campo}>
-        <label htmlFor="imagen">Imagen:</label>
+        <label htmlFor="stock">Stock disponible:</label>
         <input
-          type="file"
-          id="imagen"
-          accept="image/*"
-          onChange={manejarCambioImagen}
+          type="number"
+          id="stock"
+          name="stock"
+          placeholder="Ej: 10"
+          min="0"
+          step="1"
+          value={datosForm.stock}
+          onChange={manejarCambio}
+          required
         />
       </div>
 
-      <button type="submit" className={styles.boton} disabled={cargando}>
-        {cargando ? 'Subiendo imagen...' : 'Guardar servicio'}
+      <div className={styles.campo}>
+        <label htmlFor="imagen">Imagen (URL):</label>
+        <input
+          type="text"
+          id="imagen"
+          name="imagen"
+          placeholder="Ej: https://sitio.com/imagen.webp o /img/foto.jpg"
+          value={datosForm.imagen}
+          onChange={manejarCambio}
+          required
+        />
+        {datosForm.imagen && (
+          <img className={styles.vistaPrevia} src={obtenerImagen(datosForm.imagen)} alt="Vista previa" />
+        )}
+      </div>
+
+      <label className={styles.check}>
+        <input
+          type="checkbox"
+          name="oferta"
+          checked={datosForm.oferta}
+          onChange={manejarCambio}
+        />
+        Mostrar en ofertas (página de inicio)
+      </label>
+
+      <button type="submit" className={styles.boton} disabled={guardando}>
+        {guardando ? 'Guardando...' : modoEdicion ? 'Actualizar servicio' : 'Guardar servicio'}
       </button>
 
-      {mensaje && <p className={styles.mensaje}>{mensaje}</p>}
-      {urlImagen && <img className={styles.vistaPrevia} src={urlImagen} alt="Imagen subida" />}
+      {modoEdicion && (
+        <button type="button" className={styles.botonCancelar} onClick={cancelarEdicion}>
+          Cancelar edición
+        </button>
+      )}
     </form>
   );
 }

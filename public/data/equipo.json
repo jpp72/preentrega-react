@@ -1,0 +1,5 @@
+[
+  { "id": 1, "area": "Logística", "nombre": "Martín Ferreyra", "cargo": "Jefe de Logística" },
+  { "id": 2, "area": "Turismo", "nombre": "Lucía Benítez", "cargo": "Coordinadora de Turismo" },
+  { "id": 3, "area": "Ingeniería", "nombre": "Diego Alvarado", "cargo": "Jefe de Ingeniería" }
+]

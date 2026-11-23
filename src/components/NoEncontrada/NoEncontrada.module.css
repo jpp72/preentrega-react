@@ -1,0 +1,10 @@
+.aviso {
+    margin: 3rem auto;
+    text-align: center;
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aviso a {
+    color: brown;
+}

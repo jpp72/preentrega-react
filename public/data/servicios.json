@@ -5,7 +5,9 @@
     "nombre": "Carga general",
     "descripcion": "Traslado aéreo de carga seca.",
     "precio": 1200,
-    "imagen": "cargoPlane"
+    "imagen": "cargoPlane",
+    "stock": 20,
+    "oferta": true
   },
   {
     "id": 2,
@@ -13,7 +15,9 @@
     "nombre": "Carga refrigerada",
     "descripcion": "Traslado con cadena de frío.",
     "precio": 2500,
-    "imagen": "cargoPlane"
+    "imagen": "cargoPlane",
+    "stock": 10,
+    "oferta": false
   },
   {
     "id": 3,
@@ -21,7 +25,9 @@
     "nombre": "Pasaje nacional",
     "descripcion": "Vuelos dentro del país.",
     "precio": 150,
-    "imagen": "travel"
+    "imagen": "travel",
+    "stock": 50,
+    "oferta": false
   },
   {
     "id": 4,
@@ -29,7 +35,9 @@
     "nombre": "Pasaje internacional",
     "descripcion": "Vuelos a destinos del exterior.",
     "precio": 650,
-    "imagen": "travel"
+    "imagen": "travel",
+    "stock": 30,
+    "oferta": true
   },
   {
     "id": 5,
@@ -37,7 +45,9 @@
     "nombre": "Inspección general",
     "descripcion": "Revisión completa de la aeronave.",
     "precio": 3000,
-    "imagen": "repar"
+    "imagen": "repar",
+    "stock": 8,
+    "oferta": true
   },
   {
     "id": 6,
@@ -45,6 +55,8 @@
     "nombre": "Reparación de motores",
     "descripcion": "Servicio técnico de motores.",
     "precio": 12000,
-    "imagen": "repar"
+    "imagen": "repar",
+    "stock": 5,
+    "oferta": false
   }
 ]

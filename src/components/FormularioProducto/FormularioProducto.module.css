@@ -76,7 +76,24 @@
 
 .vistaPrevia {
     width: 100%;
-    max-height: 250px;
+    max-height: 180px;
     object-fit: cover;
     border-radius: 10px;
+}
+
+.check {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: bold;
+}
+
+.botonCancelar {
+    border: solid 1px brown;
+    cursor: pointer;
+    background-color: white;
+    color: brown;
+    padding: 8px 18px;
+    border-radius: 10px;
+    font-size: 16px;
 }
